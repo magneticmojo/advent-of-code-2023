@@ -1,0 +1,42 @@
+// Line 1: identifier: [Lists of planted seeds]
+    // \n
+    // List of Maps:
+    // Line 1: identifier
+    // Lines n until empty line: 3 cols of numbers
+        // Lines in map: dest range start | src range start | range length
+        // conversion: (seed-to-soil)
+        // 50 98 2 --> dest 50 & 51, src 98 & 99
+        // 52 50 48
+
+    // Unmapped source numbers correspond to dest
+     /*seed  soil
+        0     0
+        1     1
+        ...   ...
+        48    48
+        49    49     <-- Gap from here == range len
+        50    52
+        51    53
+        ...   ...
+        96    98
+        97    99
+        98    50    <-- Start from Gap
+        99    51
+     */
+
+    // Convert source cat to dest cat
+
+    // find the lowest location number that corresponds to any of the initial seeds
+
+    // Convert seed number through other categories => find seeds corresponding location number
+
+    /*
+
+    Seed 79, soil 81, fertilizer 81, water 81, light 74, temperature 78, humidity 78, location 82.
+    Seed 14, soil 14, fertilizer 53, water 49, light 42, temperature 42, humidity 43, location 43.
+    Seed 55, soil 57, fertilizer 57, water 53, light 46, temperature 82, humidity 82, location 86.
+    Seed 13, soil 13, fertilizer 52, water 41, light 34, temperature 34, humidity 35, location 35.
+
+    So, the lowest location number in this example is 35.
+
+    What is the lowest location number that corresponds to any of the initial seed numbers?*/
